@@ -1,15 +1,16 @@
 Laskun perintä
 
 
-Lasku
+class Lasku
  -summa:float
- -maksettava:float => summa + maksumuistutus1.maksulisä + maksumuistutus2.maksulisä
- #eräpäivä:DateOnly 
+ -maksettava:float => summa + ..maksulisät.summa
+ -maksulisät:List<MaksuLisä>
+ -eräpäivä:DateOnly 
  -maksupäivä:DateOnly 
- #suoritettu:bool -> maksuPäivä != null
- #maksumuistutus1:Maksumuistutus
- #maksumuistutus2:Maksumuistutus
- #vastaanottaja:Vastaanottaja
+ -suoritettu:bool -> maksuPäivä != null
+ -maksumuistutus1:Maksumuistutus
+ -maksumuistutus2:Maksumuistutus
+ -vastaanottaja:Vastaanottaja
 
  +asetaMaksetuksi() : void {
   maksupäivä = pvmTänään;
@@ -19,34 +20,48 @@ Lasku
    return suoritettu;
  }
 
-Vastaanottaja
- -nimi:string
- -osoite:string
- -puhNo:string
- -sähköposti:string
+record Vastaanottaja
+ +nimi:string
+ +osoite:string
+ +puhNo:string
+ +sähköposti:string
 
-Maksumuistutus
+class Maksumuistutus
  -lasku:Lasku
- -lähetysPvm:DateOnly 
- -lähetetty:bool => lähetysPvm != null
- -maksulisä:float
+ +lähetysPvm:DateOnly 
+ +lähetetty:bool => lähetysPvm != null
 
  +voikoLähettää() : bool => {
       if (lasku.onkoSuoritettu() || lähetetty) {
 	   return false;
 	}
-	bool onkoEnsimmäinen = lasku.maksumuistutus1 = this;
+	bool onkoEnsimmäinen = lasku.maksumuistutus1 == this;
 	if (onkoEnsimmäinen) {
-		return pvmTänään > lasku.eräpäivä + 14p;
+		return pvmTänään >= lasku.eräpäivä + 14p;
 	} else { // pakko olla toinen muistutus
-		return pvmTänään > lasku.eräpäivä + 28p;
+		return pvmTänään >= lasku.eräpäivä + 28p;
 	}
  }
 
-+lähetä() : void {
+ +määrä():float => return maksulisä.määrä
+ +lähetä() : void {
 	if (!this.voikoLähettää()) {
 		return throw new Error("Virhe!");
 	}
 	lähetysPvm = date.now();
-	maksuLisä = 5;
-}
+	lasku.maksulisät.push ( new Maksulisä(5, "MAKSUMUISTUTUS") );
+ }
+
+Record Maksulisä
+ +määrä:float
+ +pvm:DateOnly
+ +tyyppi:string // esim. MAKSUMUISTUTUS tai PERINTÄLASKU ?
+
+
+
+
+
+
+
+Laskut GUI:hin listBoxina sortattuma eräpäivän mukaan vasemmalle puolelle, oikealle puolelle valitun laskun tarkemmat tiedot ja toiminnot(maksetuksi merkitseminen, maksumuistutuksen lähetys) ?
+Lasku listassa boldattuna tjsp. huomioituna mikäli maksumuistutuksen voi lähettää?

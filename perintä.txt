@@ -3,30 +3,50 @@ Laskun perintä
 
 Lasku
  -summa:float
- -eräpäivä:date
- -maksupäivä:date
- -suoritettu:bool -> maksuPäivä != null
- -maksumuistutus1:Maksumuistutus
- -maksumuistutus2:Maksumuistutus
- -vastaanottaja:Vastaanottaja
+ -maksettava:float => summa + maksumuistutus1.maksulisä + maksumuistutus2.maksulisä
+ #eräpäivä:DateOnly 
+ -maksupäivä:DateOnly 
+ #suoritettu:bool -> maksuPäivä != null
+ #maksumuistutus1:Maksumuistutus
+ #maksumuistutus2:Maksumuistutus
+ #vastaanottaja:Vastaanottaja
 
- +asetaMaksetuksi() {
-  maksuPäivä = date.now();
-  suoritettu = true;
+ +asetaMaksetuksi() : void {
+  maksupäivä = pvmTänään;
  }
 
-
+ +onkoSuoritettu() : true {
+   return suoritettu;
+ }
 
 Vastaanottaja
  -nimi:string
  -osoite:string
  -puhNo:string
- -sähköpostin:string
+ -sähköposti:string
 
 Maksumuistutus
  -lasku:Lasku
- -lähetysPvm:date
+ -lähetysPvm:DateOnly 
  -lähetetty:bool => lähetysPvm != null
  -maksulisä:float
 
- +voikoLähettää() => lähetetty != null && 
+ +voikoLähettää() : bool => {
+      if (lasku.onkoSuoritettu() || lähetetty) {
+	   return false;
+	}
+	bool onkoEnsimmäinen = lasku.maksumuistutus1 = this;
+	if (onkoEnsimmäinen) {
+		return pvmTänään > lasku.eräpäivä + 14p;
+	} else { // pakko olla toinen muistutus
+		return pvmTänään > lasku.eräpäivä + 28p;
+	}
+ }
+
++lähetä() : void {
+	if (!this.voikoLähettää()) {
+		return throw new Error("Virhe!");
+	}
+	lähetysPvm = date.now();
+	maksuLisä = 5;
+}

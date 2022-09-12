@@ -1,0 +1,32 @@
+Laskun perintä
+
+
+Lasku
+ -summa:float
+ -eräpäivä:date
+ -maksupäivä:date
+ -suoritettu:bool -> maksuPäivä != null
+ -maksumuistutus1:Maksumuistutus
+ -maksumuistutus2:Maksumuistutus
+ -vastaanottaja:Vastaanottaja
+
+ +asetaMaksetuksi() {
+  maksuPäivä = date.now();
+  suoritettu = true;
+ }
+
+
+
+Vastaanottaja
+ -nimi:string
+ -osoite:string
+ -puhNo:string
+ -sähköpostin:string
+
+Maksumuistutus
+ -lasku:Lasku
+ -lähetysPvm:date
+ -lähetetty:bool => lähetysPvm != null
+ -maksulisä:float
+
+ +voikoLähettää() => lähetetty != null && 

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj": {}
+    "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj": {
+    "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+        "projectUniqueName": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
         "projectName": "projektityö",
-        "projectPath": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
-        "packagesPath": "C:\\Users\\tllabra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
+        "projectPath": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+        "packagesPath": "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tllabra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tllabra.LABRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

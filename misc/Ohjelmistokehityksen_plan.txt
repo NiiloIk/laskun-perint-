@@ -1,0 +1,6 @@
+ohjelmistoprojektin toiminta
+- Luo uusi lasku
+- Hae entisiä laskujen tietoja
+- Ilmoittaa laskumuistutksen päivämäärän ja laskun määrän
+- Kuittaa maksetut laskut  
+- Tallettaa aiemmat tiedot/ laskut muistiin

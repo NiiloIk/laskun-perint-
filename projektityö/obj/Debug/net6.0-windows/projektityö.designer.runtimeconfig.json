@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tllabra\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tllabra\\.nuget\\packages",
+      "C:\\Users\\tllabra.LABRA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tllabra.LABRA\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

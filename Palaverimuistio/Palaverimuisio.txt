@@ -1,0 +1,4 @@
+21.09.2022
+Suuniteltiin käyttöliittymää, eri ikkunoita ja ohjelman toimintaa.
+Mallinnettiin visual studiolla wpf käyttistä.
+Vähän koodattiin; testailtiin laskun henkilötietojen tallentumista luokkaan.

@@ -23,6 +23,6 @@ internal class Vastaanottaja
     }
     public string Info()
     {
-        return ($"Nimi: {etunimi} {sukunimi}\nOsoite: {osoite}\nPuhelin numero: {puhNo}\nSähköposti: {sposti}");
+        return $"Nimi: {Nimi()}\nOsoite: {osoite}\nPuhelin numero: {puhNo}\nSähköposti: {sposti}";
     }
 }

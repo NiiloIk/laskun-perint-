@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj": {}
+    "C:\\Users\\niilo\\Desktop\\projekti\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj": {
+    "C:\\Users\\niilo\\Desktop\\projekti\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj",
+        "projectUniqueName": "C:\\Users\\niilo\\Desktop\\projekti\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj",
         "projectName": "LaskutusConsole",
-        "projectPath": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj",
-        "packagesPath": "C:\\Users\\tllabra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\obj\\",
+        "projectPath": "C:\\Users\\niilo\\Desktop\\projekti\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\LaskutusConsole.csproj",
+        "packagesPath": "C:\\Users\\niilo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\niilo\\Desktop\\projekti\\Olio-ohjelmointi-projekti\\LaskutusConsole\\LaskutusConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tllabra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\niilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

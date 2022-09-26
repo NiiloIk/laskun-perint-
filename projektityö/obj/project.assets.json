@@ -8,24 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+      "projectUniqueName": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
       "projectName": "projektityö",
-      "projectPath": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+      "projectPath": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
       "packagesPath": "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
+      "outputPath": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\tllabra.LABRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -31,33 +31,8 @@ namespace projektityö.Luokat
   
 
         public float summa { get; set; }
-        public float kokonaissumma
-        {
-            get {
-                float yhteensä = 0;
-                yhteensä += this.summa;
-                for (var i = 0; i < Maksulisät.Count; i++)
-                {
-                    yhteensä += Maksulisät[i].Lisä;
-                }
-                return yhteensä;
-            }
-            set{
-                //throw new Exception("Kokonaissumman asetus ei ole sallittua, muuta joko summaa tai maksulisiä");
-            }
-        }
-        // DateOnly sisältää vain päivämäärät, ei tunteja tai minuutteja.
-        //public DateOnly lähetyspäivä = DateOnly.FromDateTime(DateTime.Now);
         public DateTime Eräpäivä { get; set; }
         public DateTime? Maksupäivä { get; set; }
-        public Boolean Maksettu
-        {
-            get
-            {
-                return this.Maksupäivä != null;
-            }
-            set { /* throw new Exception("Aseta maksupäivä!"); */ }
-        }
 
         public Maksumuistutus Maksumuistutus1 { get; set; }
         public Maksumuistutus Maksumuistutus2 { get; set; }
@@ -66,13 +41,11 @@ namespace projektityö.Luokat
         //public List<Maksulisä> Maksulisät = new();
         public List<Maksulisä> Maksulisät { get; set; } = new();
 
-        public Lasku(float summa, float kokonaissumma, DateTime eräpäivä, DateTime? maksupäivä, bool maksettu, Maksumuistutus maksumuistutus1, Maksumuistutus maksumuistutus2, Vastaanottaja vastaanottaja, List<Maksulisä> maksulisät)
+        public Lasku(float summa, DateTime eräpäivä, DateTime? maksupäivä, Maksumuistutus maksumuistutus1, Maksumuistutus maksumuistutus2, Vastaanottaja vastaanottaja, List<Maksulisä> maksulisät)
         {
             this.summa = summa;
-            this.kokonaissumma = kokonaissumma;
             Eräpäivä = eräpäivä;
             Maksupäivä = maksupäivä;
-            Maksettu = maksettu;
             Maksumuistutus1 = maksumuistutus1;
             Maksumuistutus2 = maksumuistutus2;
             Vastaanottaja = vastaanottaja;
@@ -89,6 +62,23 @@ namespace projektityö.Luokat
         {
             this.Maksulisät.Add(maksulisä);
         }
+
+        public float LaskeKokonaissumma()
+        {
+            float Kokonaissumma = 0;
+            Kokonaissumma += this.summa;
+            for (var i = 0; i < Maksulisät.Count; i++)
+            {
+                Kokonaissumma += Maksulisät[i].Lisä;
+            }
+            return Kokonaissumma;
+        }
+
+        public Boolean OnkoMaksettu()
+        {
+            return this.Maksupäivä != null;
+        }
+
 
         // Asettaa Maksupäivän annetusta paremetristä, mikäli se on asetettu.
         // Mikäli ei ole asetettu, maksupäiväksi annetaan nykyinen päivä.
@@ -107,9 +97,9 @@ namespace projektityö.Luokat
             string tuloste = "";
 
             tuloste += "Summa: " + this.summa + "\n";
-            tuloste += "Kokonaissumma: " + this.kokonaissumma + "\n";
+            tuloste += "Kokonaissumma: " + this.LaskeKokonaissumma() + "\n";
             
-            if (this.Maksettu)
+            if (this.OnkoMaksettu())
             {
                 tuloste += "Maksu suoritettu: " + this.Maksupäivä.ToString() + "\n";
             }

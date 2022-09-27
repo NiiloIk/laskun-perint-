@@ -24,7 +24,12 @@ namespace projektityö.Luokat
 
         public bool voikoLähettää()
         {
-            if (this.Lähetetty || this.Isäntälasku.Maksettu)
+            if (this.Isäntälasku == null)
+            {
+                throw new Exception("Maksumuistutuksen isäntälaskua ei ole asetettu!");
+            }
+
+            if (this.Lähetetty || this.Isäntälasku.OnkoMaksettu())
             {
                 return false;
             }

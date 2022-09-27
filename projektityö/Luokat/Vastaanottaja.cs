@@ -15,9 +15,9 @@ namespace projektityö.Luokat
             this.Osoite = Osoite;
         }
 
-        public string? Etunimi;
-        public string? Sukunimi;
-        public string? Osoite;
+        public string Etunimi { get; set; }
+        public string Sukunimi { get; set; }
+        public string Osoite { get; set; }
     }
 
 

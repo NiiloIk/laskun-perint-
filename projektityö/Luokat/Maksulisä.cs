@@ -23,5 +23,16 @@ namespace projektityö.Luokat
                 this._tyyppi = value;
             }
         }
+
+        public Maksulisä(float lisä, string? tyyppi)
+        {
+            Lisä = lisä;
+            Tyyppi = tyyppi;
+        }
+
+        public Maksulisä()
+        {
+
+        }
     }
 }

@@ -9,15 +9,17 @@ namespace projektityö.Luokat
     internal class Maksumuistutus
     {
         private Lasku Isäntälasku;
-        public DateOnly? LähetysPvm { get; set; }
-        public bool Lähetetty {
+        public DateTime? LähetysPvm { get; set; }
+        public bool Lähetetty
+        {
             get { return this.LähetysPvm != null; }
-            set { throw new Exception("Aseta lähetysPvm"); }
+            set { /* throw new Exception("Aseta lähetysPvm"); */ }
         }
 
-        public Maksumuistutus(Lasku isäntälasku)
+
+        public void AsetaIsäntälasku(Lasku Isäntälasku)
         {
-            this.Isäntälasku = isäntälasku;
+            this.Isäntälasku = Isäntälasku;
         }
 
         public bool voikoLähettää()
@@ -29,12 +31,14 @@ namespace projektityö.Luokat
 
             bool olenkoMaksumuistutus1 = this.Isäntälasku.Maksumuistutus1 == this;
 
-            DateOnly pvmTänään = DateOnly.FromDateTime(DateTime.Now);
+            //DateOnly pvmTänään = DateOnly.FromDateTime(DateTime.Now);
+            DateTime pvmTänään = DateTime.Now;
 
             if (olenkoMaksumuistutus1 && pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(14))
             {
                 return true;
-            } else
+            }
+            else
             {
                 return pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(28);
             }
@@ -46,8 +50,25 @@ namespace projektityö.Luokat
             {
                 throw new Exception("Maksumuistutusta ei voi lähettää!");
             }
-            this.LähetysPvm = DateOnly.FromDateTime(DateTime.Now);
+            //this.LähetysPvm = DateOnly.FromDateTime(DateTime.Now);
+            this.LähetysPvm = DateTime.Now;
             this.Isäntälasku.lisääMaksulisä(new Maksulisä()); // TODO: aseta maksulisän tyyppi, hinta yms.
+        }
+
+        public Maksumuistutus()
+        {
+
+        }
+
+        public Maksumuistutus(Lasku isäntälasku)
+        {
+            this.Isäntälasku = isäntälasku;
+        }
+
+        public Maksumuistutus(Lasku isäntälasku, DateTime? lähetysPvm, bool lähetetty) : this(isäntälasku)
+        {
+            LähetysPvm = lähetysPvm;
+            Lähetetty = lähetetty;
         }
     }
 }

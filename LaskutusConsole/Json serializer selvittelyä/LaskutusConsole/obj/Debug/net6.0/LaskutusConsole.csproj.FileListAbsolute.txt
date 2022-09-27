@@ -1,0 +1,45 @@
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.exe
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.deps.json
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.runtimeconfig.json
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.dll
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.AssemblyReference.cache
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfoInputs.cache
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfo.cs
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.CoreCompileInputs.cache
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.dll
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\refint\LaskutusConsole.dll
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.genruntimeconfig.cache
+C:\Users\tllabra\source\repos\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\ref\LaskutusConsole.dll
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.exe
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.deps.json
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.runtimeconfig.json
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.dll
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.AssemblyReference.cache
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfoInputs.cache
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfo.cs
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.CoreCompileInputs.cache
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.dll
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\refint\LaskutusConsole.dll
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.genruntimeconfig.cache
+C:\Users\niilo\Desktop\projekti\Olio-ohjelmointi-projekti\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\ref\LaskutusConsole.dll
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.exe
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.deps.json
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.runtimeconfig.json
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.dll
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\bin\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.AssemblyReference.cache
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfoInputs.cache
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.AssemblyInfo.cs
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.csproj.CoreCompileInputs.cache
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.dll
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\refint\LaskutusConsole.dll
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.pdb
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\LaskutusConsole.genruntimeconfig.cache
+C:\Users\tllabra\Desktop\Console homma\LaskutusConsole\LaskutusConsole\LaskutusConsole\obj\Debug\net6.0\ref\LaskutusConsole.dll

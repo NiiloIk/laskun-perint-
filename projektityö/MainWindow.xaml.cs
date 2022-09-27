@@ -70,5 +70,28 @@ namespace projektityö
             );
             */
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mywindow = new Window1(); 
+            mywindow.Show();
+            this.Close();
+            
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window2 mywindow = new Window2(); 
+            mywindow.Show();
+            this.Close();
+            
+
+        }
     }
 }

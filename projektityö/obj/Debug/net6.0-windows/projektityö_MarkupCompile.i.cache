@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tllabra.LABRA\source\repos\jöö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\
+C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\
 projektityö
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\tllabra.LABRA\source\repos\jöö\Olio-ohjelmointi-projekti\projektityö\App.xaml
-11407045341
+C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\App.xaml
+31130175450
 
-51022769671
-194-200944676
-MainWindow.xaml;
+11343796848
+194-1103864946
+MainWindow.xaml;Window1.xaml;Window2.xaml;
 
-False
+True
 

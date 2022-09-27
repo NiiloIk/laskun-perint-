@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Eeppinen laskusovellus" VerticalAlignment="Top" Width="190" Height="43" RenderTransformOrigin="0.484,0.503" TextChanged="TextBox_TextChanged" FontSize="14"/>
+        <Button Content="Uusi lasku" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click"/>
+        <Button Content="Vanhat laskut" HorizontalAlignment="Left" Margin="537,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

@@ -45,9 +45,13 @@ namespace projektityö
             Debug.Write(tuloste);
             MessageBox.Show(tuloste);
 
+            
+            // Kommentoitu osuus kokeilua joka näyttää toimivan.
+            /*
             File.WriteAllText("lasku.json",
-                JsonSerializer.Serialize(lasku , new JsonSerializerOptions { WriteIndented=true } )
+                JsonSerializer.Serialize(lasku, new JsonSerializerOptions { WriteIndented = true })
             );
+            lasku = null;
             Lasku palautettuLasku = JsonSerializer.Deserialize<Lasku>(File.ReadAllText("lasku.json"));
             if (palautettuLasku == null)
             {
@@ -61,7 +65,10 @@ namespace projektityö
 
             string palautetunTuloste = palautettuLasku.Tietotuloste();
             MessageBox.Show(palautetunTuloste);
-
+            File.WriteAllText("lasku.json",
+                JsonSerializer.Serialize(palautettuLasku, new JsonSerializerOptions { WriteIndented = true })
+            );
+            */
         }
     }
 }

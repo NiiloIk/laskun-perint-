@@ -29,21 +29,21 @@ namespace projektityö
             InitializeComponent();
 
             //DateOnly pvmTänään = DateOnly.FromDateTime(DateTime.Now);
-            DateTime pvmTänään = DateTime.Now;
+            //DateTime pvmTänään = DateTime.Now;
 
-            Lasku lasku = new Lasku();
-            lasku.summa = 30f;
+            //Lasku lasku = new Lasku();
+            //lasku.summa = 30f;
 
-            Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+            //Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
 
-            lasku.Eräpäivä = pvmTänään.AddDays(-35);
-            lasku.Vastaanottaja = vastaanottaja;
+            //lasku.Eräpäivä = pvmTänään.AddDays(-35);
+            //lasku.Vastaanottaja = vastaanottaja;
 
-            lasku.Maksumuistutus1.Lähetä();
+            //lasku.Maksumuistutus1.Lähetä();
 
-            string tuloste = lasku.Tietotuloste();
-            Debug.Write(tuloste);
-            MessageBox.Show(tuloste);
+            //string tuloste = lasku.Tietotuloste();
+            //Debug.Write(tuloste);
+            //MessageBox.Show(tuloste);
 
             
             // Kommentoitu osuus kokeilua joka näyttää toimivan.
@@ -87,8 +87,8 @@ namespace projektityö
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window2 mywindow = new Window2(); 
-            mywindow.Show();
+            Window2 mywindow2 = new Window2(); 
+            mywindow2.Show();
             this.Close();
             
 

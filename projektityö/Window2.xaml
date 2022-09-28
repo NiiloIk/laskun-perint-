@@ -8,9 +8,10 @@
         Title="Window2" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Uusi Lasku" Click="MenuItem_Click_1"/>
                 <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
+                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
             </MenuItem>
         </Menu>
         <Grid>
@@ -18,6 +19,7 @@
                 <ColumnDefinition Width="0*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Vanhat Laskut" VerticalAlignment="Top" Height="32" Width="146" FontSize="20"/>
         </Grid>
     </DockPanel>
 </Window>

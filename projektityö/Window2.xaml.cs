@@ -30,5 +30,12 @@ namespace projektityö
             pääikkuna.Show();
             this.Close();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 uusiLasku = new Window1();
+            uusiLasku.Show();
+            this.Close();
+        }
     }
 }

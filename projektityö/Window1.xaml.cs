@@ -30,5 +30,27 @@ namespace projektityö
             pääikkuna.Show();
             this.Close();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window2 vanhatLaskut = new Window2();
+            vanhatLaskut.Show();
+            this.Close();
+        }
+        private void hkTiedot_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+        }
+
+        private void tallennaBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (hkTiedot)
+            {
+                textBlock.Text = "*Tiedot puuttuu";
+            }
+          
+        }
+
+       
     }
 }

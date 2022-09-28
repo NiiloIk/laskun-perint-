@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\": {}
+    "C:\\Users\\Joona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+      "projectUniqueName": "C:\\Users\\Joona\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
       "projectName": "projektityö",
-      "projectPath": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
-      "packagesPath": "C:\\Users\\tllabra.LABRA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tllabra.LABRA\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
+      "projectPath": "C:\\Users\\Joona\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+      "packagesPath": "C:\\Users\\Joona\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joona\\Documents\\Olio-ohjelmointi-projekti\\projektityö\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tllabra.LABRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

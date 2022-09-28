@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "JFeJ4CBiwatODr5k6gAUH+ZiU2lBfsLAhsorZ4O/xUsrpNpgIP2aO9zLjEuZjLGBrB/Z986zAjh5SAs6LVtgCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\tllabra.LABRA\\source\\repos\\jöö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+=======
+  "dgSpecHash": "FRF7YlkBVJ9vUcAy1hrh3mqMkQ5Pe6W4y+K4OCuFb+VkT6tuKyc5oGvRAMmFdUC+O3P/gxsnRtNc9PQzKxE5gA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tllabra\\Desktop\\Git kansio\\projektityö\\Olio-ohjelmointi-projekti\\projektityö\\projektityö.csproj",
+>>>>>>> 0f63e1445e43ab1c73ce2b4a9094e4c98896fbe2
   "expectedPackageFiles": [],
   "logs": []
 }

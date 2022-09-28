@@ -34,16 +34,37 @@ namespace projektityö
             //Lasku lasku = new Lasku();
             //lasku.summa = 30f;
 
+<<<<<<< HEAD
             //Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+=======
+            Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+            
+            Tallentaminen tallentaminen = new Tallentaminen();
+
+            tallentaminen.Init();
+            tallentaminen.ListaaLaskut();
+>>>>>>> 0f63e1445e43ab1c73ce2b4a9094e4c98896fbe2
 
             //lasku.Eräpäivä = pvmTänään.AddDays(-35);
             //lasku.Vastaanottaja = vastaanottaja;
 
             //lasku.Maksumuistutus1.Lähetä();
 
+<<<<<<< HEAD
             //string tuloste = lasku.Tietotuloste();
             //Debug.Write(tuloste);
             //MessageBox.Show(tuloste);
+=======
+            //tring tuloste = lasku.Tietotuloste();
+            //Debug.Write(tuloste);
+            //MessageBox.Show(tuloste);
+            string text = tallentaminen.ListaaLaskut();
+            Debug.Write(text);
+            MessageBox.Show(text);
+
+            //tallentaminen.LisääLasku(lasku);
+
+>>>>>>> 0f63e1445e43ab1c73ce2b4a9094e4c98896fbe2
 
             
             // Kommentoitu osuus kokeilua joka näyttää toimivan.

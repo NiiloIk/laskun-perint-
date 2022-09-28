@@ -41,10 +41,10 @@ namespace projektityö.Luokat
         //public List<Maksulisä> Maksulisät = new();
         public List<Maksulisä> Maksulisät { get; set; } = new();
 
-        public Lasku(float summa, DateTime eräpäivä, DateTime? maksupäivä, Maksumuistutus maksumuistutus1, Maksumuistutus maksumuistutus2, Vastaanottaja vastaanottaja, List<Maksulisä> maksulisät)
+        public Lasku(float summa, DateTime erapaiva, DateTime? maksupäivä, Maksumuistutus maksumuistutus1, Maksumuistutus maksumuistutus2, Vastaanottaja vastaanottaja, List<Maksulisä> maksulisät)
         {
             this.summa = summa;
-            Eräpäivä = eräpäivä;
+            Eräpäivä = erapaiva;
             Maksupäivä = maksupäivä;
             Maksumuistutus1 = maksumuistutus1;
             Maksumuistutus2 = maksumuistutus2;

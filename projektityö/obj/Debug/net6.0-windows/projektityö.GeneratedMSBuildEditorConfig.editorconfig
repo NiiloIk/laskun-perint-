@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projektityö
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\tllabra.LABRA\source\repos\jöö\Olio-ohjelmointi-projekti\projektityö\
+=======
+build_property.ProjectDir = C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\
+>>>>>>> 0f63e1445e43ab1c73ce2b4a9094e4c98896fbe2

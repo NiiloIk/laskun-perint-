@@ -23,3 +23,28 @@ C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\obj\Debu
 C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\ref\projektityö.dll
 C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window2.g.cs
 C:\Users\tllabra.LABRA\Documents\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window2.baml
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows\projektityö.exe
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows\projektityö.deps.json
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows\projektityö.runtimeconfig.json
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows\projektityö.dll
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows\projektityö.pdb
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.csproj.AssemblyReference.cache
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window1.g.cs
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window2.g.cs
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö_MarkupCompile.cache
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö_MarkupCompile.lref
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window1.baml
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\Window2.baml
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.g.resources
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.AssemblyInfoInputs.cache
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.AssemblyInfo.cs
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.csproj.CoreCompileInputs.cache
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.dll
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\refint\projektityö.dll
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.pdb
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\projektityö.genruntimeconfig.cache
+C:\Users\tllabra\Desktop\Git kansio\projektityö\Olio-ohjelmointi-projekti\projektityö\obj\Debug\net6.0-windows\ref\projektityö.dll

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tllabra.LABRA\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tllabra.LABRA\\.nuget\\packages"
+      "C:\\Users\\tllabra\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tllabra\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

@@ -116,11 +116,11 @@ namespace projektityö.Luokat
             }
 
 
-            if (this.Maksumuistutus1.Lähetetty == true)
+            if (this.Maksumuistutus1.OnkoLähetetty() == true)
             {
                 tuloste += "Maksumuistutus1 lähetetty: " + this.Maksumuistutus1.LähetysPvm + "\n";
             }
-            if (this.Maksumuistutus2.Lähetetty == true)
+            if (this.Maksumuistutus2.OnkoLähetetty() == true)
             {
                 tuloste += "Maksumuistutus2 lähetetty: " + this.Maksumuistutus2.LähetysPvm + "\n";
             }

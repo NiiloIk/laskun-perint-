@@ -58,6 +58,7 @@ namespace projektityö
 
 
             // Kommentoitu osuus kokeilua joka näyttää toimivan.
+            /*
             string laskukanta = "../../../laskut.json";
             File.WriteAllText(laskukanta,
                 JsonSerializer.Serialize(lasku, new JsonSerializerOptions { WriteIndented = true })
@@ -79,6 +80,7 @@ namespace projektityö
             File.WriteAllText("lasku.json",
                 JsonSerializer.Serialize(palautettuLasku, new JsonSerializerOptions { WriteIndented = true })
             );
+            */
             
         }
 

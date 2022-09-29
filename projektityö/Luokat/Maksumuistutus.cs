@@ -10,12 +10,11 @@ namespace projektityö.Luokat
     {
         private Lasku Isäntälasku;
         public DateTime? LähetysPvm { get; set; }
-        public bool Lähetetty
-        {
-            get { return this.LähetysPvm != null; }
-            set { /* throw new Exception("Aseta lähetysPvm"); */ }
-        }
 
+        public bool OnkoLähetetty()
+        {
+            return this.LähetysPvm != null;
+        }
 
         public void AsetaIsäntälasku(Lasku Isäntälasku)
         {
@@ -29,14 +28,13 @@ namespace projektityö.Luokat
                 throw new Exception("Maksumuistutuksen isäntälaskua ei ole asetettu!");
             }
 
-            if (this.Lähetetty || this.Isäntälasku.OnkoMaksettu())
+            if (this.OnkoLähetetty() || this.Isäntälasku.OnkoMaksettu())
             {
                 return false;
             }
 
             bool olenkoMaksumuistutus1 = this.Isäntälasku.Maksumuistutus1 == this;
 
-            //DateOnly pvmTänään = DateOnly.FromDateTime(DateTime.Now);
             DateTime pvmTänään = DateTime.Now;
 
             if (olenkoMaksumuistutus1 && pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(14))
@@ -55,7 +53,6 @@ namespace projektityö.Luokat
             {
                 throw new Exception("Maksumuistutusta ei voi lähettää!");
             }
-            //this.LähetysPvm = DateOnly.FromDateTime(DateTime.Now);
             this.LähetysPvm = DateTime.Now;
             this.Isäntälasku.lisääMaksulisä(new Maksulisä()); // TODO: aseta maksulisän tyyppi, hinta yms.
         }
@@ -70,10 +67,9 @@ namespace projektityö.Luokat
             this.Isäntälasku = isäntälasku;
         }
 
-        public Maksumuistutus(Lasku isäntälasku, DateTime? lähetysPvm, bool lähetetty) : this(isäntälasku)
+        public Maksumuistutus(Lasku isäntälasku, DateTime? lähetysPvm) : this(isäntälasku)
         {
             LähetysPvm = lähetysPvm;
-            Lähetetty = lähetetty;
         }
     }
 }

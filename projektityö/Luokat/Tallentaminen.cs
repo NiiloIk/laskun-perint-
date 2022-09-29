@@ -64,21 +64,17 @@ namespace projektityö.Luokat
 
             foreach (var lasku in Laskut)
             {
-                //string maksettu = (lasku.laskuSuoritettu) ? "On" : "Ei";
-
-                // henkilötietoihin pääsee käsiksi jos kirjoittaa.
-                // lasku.Vastaanottaja.[tieto]
+                //henkilötietoihin pääsee käsiksi jos kirjoittaa.
+                //lasku.Vastaanottaja.[tieto]
                 // Näitä voi hyödyntää kun lähettää tiedot WPF näytölle.
+                
                 //string text = $"Määrä euroina: {lasku.summa}\nHenkilö: {lasku.Vastaanottaja.Etunimi} {lasku.Vastaanottaja.Sukunimi}\n" +
                 //    $"\nEräpäivämäärä: {lasku.Eräpäivä}\n" +
                 //    $"Maksulisä: {lasku.Maksulisät}";
-                //Console.WriteLine(lasku.Tietotuloste());
-
-                //Console.WriteLine(text);
-                //Console.WriteLine();
+                
                 return lasku.Tietotuloste();
             }
-            return "done deal";
+            return "Ei laskutietoja";
         }
 
     }

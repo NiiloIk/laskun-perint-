@@ -1,0 +1,5 @@
+Sovittiin yhdessä mitä tehdään viikolla.
+
+Joona suunnitteli tekevänsä classit ohjelmaan. 
+Paavo ja Valtteri suunnittelivat käyttöliittymän ulkonäköä. 
+Niilo keskittyy tietojen tallentamiseen.

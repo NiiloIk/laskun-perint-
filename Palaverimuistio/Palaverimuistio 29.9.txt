@@ -1,0 +1,8 @@
+Joona korjasi github ohjelman hankalien ongelmien jälkeen. 
+
+Suunnitellaan miten ohjelma saadaan vietyä eteenpäin.
+
+Valtteri suunnittelee työstävänsä vanhat laskut osiota.
+Paavo työstää uudet laskut osiota.
+Joona pelastaa päivän, kun kaikki menee pieleen.
+Niilo on lomalla ensi viikon eikä pysty auttamaan.

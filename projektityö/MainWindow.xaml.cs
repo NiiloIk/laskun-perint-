@@ -38,6 +38,9 @@ namespace projektityö
             
             Tallentaminen tallentaminen = new Tallentaminen();
 
+            lasku.Vastaanottaja = vastaanottaja;
+
+            tallentaminen.LisääLasku(lasku);
             tallentaminen.Init();
             tallentaminen.ListaaLaskut();
 
@@ -53,7 +56,7 @@ namespace projektityö
             Debug.Write(text);
             MessageBox.Show(text);
 
-            //tallentaminen.LisääLasku(lasku);
+            
 
 
 

@@ -9,13 +9,14 @@ namespace projektityö.Luokat
     internal class Maksulisä
     {
         public float Lisä { get; set; } = 5;
-
+        // Oletusarvoinen laskuuistutuksen tyyppi.
         private string? _tyyppi = "MAKSUMUISTUTUS";
         public string? Tyyppi
         {
             get { return this._tyyppi; }
             set
             {
+                // TODO: Siirrä hyväksytyt maksumuistutustyypit listaan tai taulokkoon, ja katso sisältääkö se valuen.
                 if (value != "MAKSUMUISTUTUS" && value != "KARHUKIRJE")
                 {
                     throw new Exception("Maksulisän tyyppi on virheellinen");

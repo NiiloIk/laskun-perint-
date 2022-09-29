@@ -56,14 +56,14 @@ namespace projektityö
             //tallentaminen.LisääLasku(lasku);
 
 
-            
+
             // Kommentoitu osuus kokeilua joka näyttää toimivan.
-            /*
-            File.WriteAllText("lasku.json",
+            string laskukanta = "../../../laskut.json";
+            File.WriteAllText(laskukanta,
                 JsonSerializer.Serialize(lasku, new JsonSerializerOptions { WriteIndented = true })
             );
             lasku = null;
-            Lasku palautettuLasku = JsonSerializer.Deserialize<Lasku>(File.ReadAllText("lasku.json"));
+            Lasku palautettuLasku = JsonSerializer.Deserialize<Lasku>(File.ReadAllText(laskukanta));
             if (palautettuLasku == null)
             {
                 throw new Exception("Tallennettua laskua ei löytynyt!");
@@ -79,7 +79,7 @@ namespace projektityö
             File.WriteAllText("lasku.json",
                 JsonSerializer.Serialize(palautettuLasku, new JsonSerializerOptions { WriteIndented = true })
             );
-            */
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

@@ -18,6 +18,7 @@
                 <ColumnDefinition Width="0*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <ListBox x:Name="listBox" Grid.ColumnSpan="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,623,0"/>
         </Grid>
     </DockPanel>
 </Window>

@@ -18,7 +18,13 @@
                 <ColumnDefinition Width="0*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <ListBox x:Name="listBox" Grid.ColumnSpan="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,623,0"/>
+            <ListBox x:Name="listBox" Grid.ColumnSpan="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,623,0" SelectionChanged="listBox_SelectionChanged"/>
+            <TextBox x:Name="nameBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42"/>
+            <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fi-fi" Text="Name"/></TextBlock>
+            <TextBox x:Name="nameBox_Copy" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42"/>
+            <TextBox x:Name="nameBox_Copy1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42"/>
+            <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fi-fi" Text="Amount"/></TextBlock>
+            <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="321,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fi-fi" Text="Address"/></TextBlock>
         </Grid>
     </DockPanel>
 </Window>

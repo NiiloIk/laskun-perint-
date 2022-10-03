@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Text.Json;
 using System.IO;
 using projektityö.Luokat;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace projektityö
 {
@@ -24,26 +25,21 @@ namespace projektityö
     {
         public Window2()
         {
-            // void Init()
-            //{
-            //    try
-            //    {
-            //        var raakaJson = File.ReadAllText(tiedostoNimi);
-            //        if (raakaJson.Length > 5)
-            //        {
-            //            var henkilöt = JsonSerializer.Deserialize<Tallentaminen>(raakaJson);
-            //            if (henkilöt != null)
-            //            {
-            //                this.Laskut = henkilöt.Laskut;
-            //            }
-            //        }
-            //        Console.WriteLine("Tietokannan luku onnistui");
-            //    }
-            //    catch
-            //    {
-            //        Console.WriteLine("Tietokanta tiedostoa ei voitu lukea");
-            //    }
+            InitializeComponent();
+
+            //Haetaan tiedot tallennuskansiosta, eli tässä kohtaa hae lista Vastaanottajista
+            Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+            Vastaanottaja vastaanottaja2 = new Vastaanottaja("Vatti", "Eeikäläinen", "Säkintie 1A, 13400 SÄKKILÄ");
+            listBox.DataContext = vastaanottaja;
+            listBox.DisplayMemberPath = "kokoNimi";
+            listBox.Items.Add(vastaanottaja);
+            listBox.Items.Add(vastaanottaja2);
+            // Tässä kohtaa tee foreach, joka käy haetun listan läpi, ja lisää nimet yksi kerrallaan listBoxiin
+            //foreach(var jäbä in vastaanottajat){
+            //  listBox.Items.Add(jäbä);
             //}
+
+
 
         }
 
@@ -56,7 +52,19 @@ namespace projektityö
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
+            {
+                Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
+                nameBox.Text = vastaanottaja.kokoNimi;
+                adressBox.Text = vastaanottaja.Osoite;
+                //amountBox.Text = vastaanottaja.laskunsumma
+            }
+
+
             //listBox.ItemsSource = Tallentaminen.Laskut;
         }
+
+
     }
 }
+

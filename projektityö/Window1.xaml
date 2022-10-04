@@ -9,12 +9,24 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
                 <MenuItem Header="_Kotisivu" Click="MenuItem_Click"  />
-                
+                <MenuItem Header="_Vanhat Laskut" Click="MenuItem_Click_1"   />
+                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
+
+
             </MenuItem>
         </Menu>
         <Grid>
+            <Label Content="Etu ja Sukunimi" HorizontalAlignment="Left" Margin="34,59,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="nimiBox" HorizontalAlignment="Left" Margin="34,85,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="34,38,0,0" TextWrapping="Wrap" Text="Luo uusi lasku" VerticalAlignment="Top"/>
+            <Label Content="Kotiosoite" HorizontalAlignment="Left" Margin="34,108,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox x:Name="osoiteBox" HorizontalAlignment="Left" Margin="34,134,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Summa" HorizontalAlignment="Left" Margin="34,157,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="summaBox" HorizontalAlignment="Left" Margin="34,183,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Eräpäivä" HorizontalAlignment="Left" Margin="34,206,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="eräBox" HorizontalAlignment="Left" Margin="34,232,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="tallenna" Content="Tallenna" HorizontalAlignment="Left" Margin="52,277,0,0" VerticalAlignment="Top" Height="25" Width="84"/>
         </Grid>
     </DockPanel>
 </Window>

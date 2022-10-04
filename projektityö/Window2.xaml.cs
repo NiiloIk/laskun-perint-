@@ -64,7 +64,12 @@ namespace projektityö
             //listBox.ItemsSource = Tallentaminen.Laskut;
         }
 
-
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 uusi = new Window1();
+            uusi.Show();
+            this.Close();
+        }
     }
 }
 

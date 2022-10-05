@@ -26,13 +26,14 @@ using System.Threading.Tasks;
 */
 namespace projektityö.Luokat
 {
-    internal class Lasku
+    public class Lasku
     {
   
 
         public float summa { get; set; }
         public DateTime Eräpäivä { get; set; }
         public DateTime? Maksupäivä { get; set; }
+        public DateTime Luontipäivämäärä { get; set; }
 
         public Maksumuistutus Maksumuistutus1 { get; set; }
         public Maksumuistutus Maksumuistutus2 { get; set; }

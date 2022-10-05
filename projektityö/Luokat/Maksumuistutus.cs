@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projektityö.Luokat
 {
-    internal class Maksumuistutus
+    public class Maksumuistutus
     {
         private Lasku Isäntälasku;
         public DateTime? LähetysPvm { get; set; }

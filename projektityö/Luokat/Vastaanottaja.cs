@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projektityö.Luokat
 {
-    internal class Vastaanottaja
+    public class Vastaanottaja
     {
         public string Etunimi { get; set; }
         public string Sukunimi { get; set; }

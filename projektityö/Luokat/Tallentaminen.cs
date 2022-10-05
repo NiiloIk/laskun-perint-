@@ -51,6 +51,12 @@ namespace projektityö.Luokat
 
             TallennaKanta();
         }
+        public void PoistaLasku(Lasku poistettava)
+        {
+            Laskut.Remove(poistettava);
+
+            TallennaKanta();
+        }
         public void TallennaKanta()
         {
             string json = JsonSerializer.Serialize<Tallentaminen>(this);

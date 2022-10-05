@@ -25,7 +25,7 @@ namespace projektityö
     {
         private Window2 _window2;
         private Window1 uusiIkkuna;
-
+        private Tallentaminen tallentaminen;
         public Window2()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace projektityö
             //listBox.DisplayMemberPath = "kokoNimi";
             //listBox.Items.Add(vastaanottaja);
             //listBox.Items.Add(vastaanottaja2);
-            Tallentaminen tallentaminen = new Tallentaminen();
+            this.tallentaminen = new Tallentaminen();
             tallentaminen.Init();
             listBox.ItemsSource = tallentaminen.Laskut;
             
@@ -84,6 +84,14 @@ namespace projektityö
             this.uusiIkkuna = new Window1();
             this.uusiIkkuna.Show();
             this._window2.Close();
+        }
+
+        private void poistaBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Lasku valittulasku = (Lasku)listBox.SelectedItem;
+            tallentaminen.PoistaLasku(valittulasku);
+            MessageBox.Show("lasku poistettu, käy kotisivulla ja palaa tähän niin muutos näkyy");
+            listBox.ItemsSource = tallentaminen.Laskut;
         }
     }
 }

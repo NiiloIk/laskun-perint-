@@ -63,15 +63,21 @@ namespace projektityö.Luokat
         {
             this.Maksulisät.Add(maksulisä);
         }
-
+        public float MaksulisienSumma()
+        {
+            float maksulisät = 0;
+            
+            for (var i = 0; i < Maksulisät.Count; i++)
+            {
+                maksulisät += Maksulisät[i].Lisä;
+            }
+            return maksulisät;
+        }
         public float LaskeKokonaissumma()
         {
             float Kokonaissumma = 0;
             Kokonaissumma += this.summa;
-            for (var i = 0; i < Maksulisät.Count; i++)
-            {
-                Kokonaissumma += Maksulisät[i].Lisä;
-            }
+            Kokonaissumma += this.MaksulisienSumma();
             return Kokonaissumma;
         }
 

@@ -23,9 +23,13 @@ namespace projektityö
     /// </summary>
     public partial class Window2 : Window
     {
+        private Window2 _window2;
+        private Window1 uusiIkkuna;
+
         public Window2()
         {
             InitializeComponent();
+            this._window2 = this;
 
             //Haetaan tiedot tallennuskansiosta, eli tässä kohtaa hae lista Vastaanottajista
             //Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
@@ -64,18 +68,22 @@ namespace projektityö
 
                 nameBox.Text = valittuVastaanottaja.Etunimi + " " + valittuVastaanottaja.Sukunimi;
                 adressBox.Text = valittuVastaanottaja.Osoite;
-                //amountBox.Text = vastaanottaja.laskunsumma
+
+                amountBox.Text = valittulasku.summa.ToString();
+                lisäBox.Text = valittulasku.MaksulisienSumma().ToString();
             }
 
 
             //listBox.ItemsSource = Tallentaminen.Laskut;
         }
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
-            Window1 uusi = new Window1();
-            uusi.Show();
-            this.Close();
+            this.uusiIkkuna = new Window1();
+            this.uusiIkkuna.Show();
+            this._window2.Close();
         }
     }
 }

@@ -9,9 +9,9 @@
         Title="Window2" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File" Click="MenuItem_Click_1">
+            <MenuItem Header="_File" >
                 <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
-                <MenuItem Header="_Uusi Lasku"/>
+                <MenuItem Header="_Uusi Lasku" Click="MenuItem_Click_2" />
                 <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
                
             </MenuItem>
@@ -27,8 +27,10 @@
             <TextBlock HorizontalAlignment="Left" Margin="266,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="32"><Run Language="fi-fi" Text="Name"/></TextBlock>
             <TextBox x:Name="adressBox" HorizontalAlignment="Left" Margin="266,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42" Grid.Column="2"/>
             <TextBox x:Name="amountBox" HorizontalAlignment="Left" Margin="266,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42" Grid.Column="2"/>
-            <TextBlock HorizontalAlignment="Left" Margin="266,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="43"><Run Language="fi-fi" Text="Amount"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="266,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="43"><Run Language="fi-fi" Text="Lasku"/></TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="266,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="43"><Run Language="fi-fi" Text="Address"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="266,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="43"><Run Language="fi-fi" Text="Lisät"/></TextBlock>
+            <TextBox x:Name="lisäBox" HorizontalAlignment="Left" Margin="266,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="42" Grid.Column="2"/>
         </Grid>
     </DockPanel>
 </Window>

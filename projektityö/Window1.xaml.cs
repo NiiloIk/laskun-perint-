@@ -59,16 +59,43 @@ namespace projektityö
             string sukunimi = sukuBox.Text;
             string osoite = osoiteBox.Text;
             string summa = summaBox.Text;
-            string päivä = päiväBox.Text;
+
+            if(etunimi.Length == 0)
+            {
+                MessageBox.Show("Etunimi on tyhjä");
+                return;
+            }
+            if(sukunimi.Length == 0)
+            {
+                MessageBox.Show("Sukunimi on tyhjä");
+                return;
+            }
+            if(osoite.Length == 0)
+            {
+                MessageBox.Show("Osoite kenttä on tyhjä");
+                return;
+            }
+
             Vastaanottaja vastaanottaja = new Vastaanottaja();
             vastaanottaja.Osoite = osoite;
             vastaanottaja.Etunimi = etunimi;
             vastaanottaja.Sukunimi = sukunimi;
             Lasku uusi = new Lasku();
-            uusi.Vastaanottaja = vastaanottaja; 
-            uusi.summa = float.Parse(summa);
-            uusi.Luontipäivämäärä = (DateTime) päivämäärä.SelectedDate;
+            uusi.Vastaanottaja = vastaanottaja;
+
+            try
+            {
+                uusi.summa = float.Parse(summa);
+            } catch
+            {
+                MessageBox.Show("Virheellinen summa");
+                return;
+            }
+                uusi.Luontipäivämäärä = (DateTime) päivämäärä.SelectedDate;
             this.LisääLasku(uusi);
+            textBlock.Text = "*Tiedot tallennettu";
+            etuBox.Clear();
+
         }
     }
 }

@@ -38,7 +38,7 @@ namespace projektityö
             //listBox.DisplayMemberPath = "kokoNimi";
             //listBox.Items.Add(vastaanottaja);
             //listBox.Items.Add(vastaanottaja2);
-            Tallentaminen tallentaminen = new Tallentaminen();
+            Tallentaminen tallentaminen = MainWindow.tallentaminen;
             tallentaminen.Init();
             listBox.ItemsSource = tallentaminen.Laskut;
             

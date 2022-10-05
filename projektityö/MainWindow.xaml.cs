@@ -24,6 +24,7 @@ namespace projektityö
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Tallentaminen tallentaminen = new Tallentaminen();
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +38,8 @@ namespace projektityö
             Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
 
             
-            Tallentaminen tallentaminen = new Tallentaminen();
+            //Tallentaminen tallentaminen = new Tallentaminen();
+
 
             lasku.Vastaanottaja = vastaanottaja;
 

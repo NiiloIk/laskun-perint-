@@ -21,15 +21,10 @@ namespace projektityö
     /// </summary>
     public partial class Window1 : Window
     {
-        private Tallentaminen tallentaminen = new Tallentaminen();
+        private Tallentaminen tallentaminen = MainWindow.tallentaminen;
         public Window1()
         {
             InitializeComponent();
-           
-            this.tallentaminen.Init();   
-
-
-
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

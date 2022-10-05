@@ -8,7 +8,7 @@ using System.IO;
 
 namespace projektityö.Luokat
 {
-    internal class Tallentaminen
+    public class Tallentaminen
     {
         // laskutiedot menevät kansiossa ositteeseen:
         // .\Olio-ohjelmointi-projekti\projektityö\bin\Debug\net6.0-windows

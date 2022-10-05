@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projektityö.Luokat
 {
-    internal class Maksulisä
+    public class Maksulisä
     {
         public float Lisä { get; set; } = 5;
         // Oletusarvoinen laskuuistutuksen tyyppi.

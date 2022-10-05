@@ -40,21 +40,21 @@ namespace projektityö
 
             lasku.Vastaanottaja = vastaanottaja;
 
-            tallentaminen.LisääLasku(lasku);
-            tallentaminen.Init();
-            tallentaminen.ListaaLaskut();
+            //tallentaminen.LisääLasku(lasku);
+            //tallentaminen.Init();
+            //tallentaminen.ListaaLaskut();
 
-            lasku.Eräpäivä = pvmTänään.AddDays(-35);
-            lasku.Vastaanottaja = vastaanottaja;
+            //lasku.Eräpäivä = pvmTänään.AddDays(-35);
+            //lasku.Vastaanottaja = vastaanottaja;
 
-            lasku.Maksumuistutus1.Lähetä();
+            //lasku.Maksumuistutus1.Lähetä();
 
-            //tring tuloste = lasku.Tietotuloste();
-            //Debug.Write(tuloste);
-            //MessageBox.Show(tuloste);
-            string text = tallentaminen.ListaaLaskut();
-            Debug.Write(text);
-            MessageBox.Show(text);
+            ////tring tuloste = lasku.Tietotuloste();
+            ////Debug.Write(tuloste);
+            ////MessageBox.Show(tuloste);
+            //string text = tallentaminen.ListaaLaskut();
+            //Debug.Write(text);
+            ////MessageBox.Show(text);
 
             
 

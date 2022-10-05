@@ -35,6 +35,7 @@ namespace projektityö
             lasku.summa = 30f;
 
             Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+
             
             Tallentaminen tallentaminen = new Tallentaminen();
 

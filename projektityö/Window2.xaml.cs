@@ -28,12 +28,16 @@ namespace projektityö
             InitializeComponent();
 
             //Haetaan tiedot tallennuskansiosta, eli tässä kohtaa hae lista Vastaanottajista
-            Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
-            Vastaanottaja vastaanottaja2 = new Vastaanottaja("Vatti", "Eeikäläinen", "Säkintie 1A, 13400 SÄKKILÄ");
-            listBox.DataContext = vastaanottaja;
-            listBox.DisplayMemberPath = "kokoNimi";
-            listBox.Items.Add(vastaanottaja);
-            listBox.Items.Add(vastaanottaja2);
+            //Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
+            //Vastaanottaja vastaanottaja2 = new Vastaanottaja("Vatti", "Eeikäläinen", "Säkintie 1A, 13400 SÄKKILÄ");
+            //listBox.DataContext = vastaanottaja;
+            //listBox.DisplayMemberPath = "kokoNimi";
+            //listBox.Items.Add(vastaanottaja);
+            //listBox.Items.Add(vastaanottaja2);
+            Tallentaminen tallentaminen = new Tallentaminen();
+            tallentaminen.Init();
+            listBox.ItemsSource = tallentaminen.Laskut;
+            
             // Tässä kohtaa tee foreach, joka käy haetun listan läpi, ja lisää nimet yksi kerrallaan listBoxiin
             //foreach(var jäbä in vastaanottajat){
             //  listBox.Items.Add(jäbä);
@@ -54,9 +58,12 @@ namespace projektityö
         {
             if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
             {
-                Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
-                nameBox.Text = vastaanottaja.kokoNimi;
-                adressBox.Text = vastaanottaja.Osoite;
+                //Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
+                Lasku valittulasku = (Lasku)listBox.SelectedItem;
+                Vastaanottaja valittuVastaanottaja = valittulasku.Vastaanottaja;
+
+                nameBox.Text = valittuVastaanottaja.Etunimi + " " + valittuVastaanottaja.Sukunimi;
+                adressBox.Text = valittuVastaanottaja.Osoite;
                 //amountBox.Text = vastaanottaja.laskunsumma
             }
 

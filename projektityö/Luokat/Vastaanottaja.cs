@@ -17,7 +17,7 @@ namespace projektityö.Luokat
             this.Etunimi = Etunimi;
             this.Sukunimi = Sukunimi;
             this.Osoite = Osoite;
-            kokoNimi = Etunimi + " " + Sukunimi;
+            this.kokoNimi = Etunimi + " " + Sukunimi;
         }
         public Vastaanottaja() { }
     }

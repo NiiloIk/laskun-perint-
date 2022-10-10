@@ -92,6 +92,7 @@ namespace projektityö
                 return;
             }
                 uusi.Luontipäivämäärä = (DateTime) päivämäärä.SelectedDate;
+            uusi.Eräpäivä = uusi.Luontipäivämäärä.AddDays(14);
             this.LisääLasku(uusi);
             textBlock.Text = "*Tiedot tallennettu";
             etuBox.Clear();

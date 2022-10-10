@@ -8,8 +8,8 @@
         Title="Window1" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_Kotisivu" Click="MenuItem_Click"  />
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
                 <MenuItem Header="_Vanhat Laskut" Click="MenuItem_Click_1"   />
                 <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
 

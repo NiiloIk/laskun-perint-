@@ -110,8 +110,11 @@ namespace projektityö
         {
             Lasku valittulasku = (Lasku)listBox.SelectedItem;
             tallentaminen.PoistaLasku(valittulasku);
+
             MessageBox.Show("lasku poistettu, käy kotisivulla ja palaa tähän niin muutos näkyy");
-           
+            
+            
+
         }
 
         private void maksettuBtn_Click(object sender, RoutedEventArgs e)
@@ -142,6 +145,8 @@ namespace projektityö
 
 
             }
+            listBox2.SelectedIndex = -1;
+            listBox.SelectedIndex = -1;
         }
     }
     

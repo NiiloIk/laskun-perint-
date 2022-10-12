@@ -33,6 +33,10 @@ namespace projektityö.Luokat
                     if (henkilöt != null)
                     {
                         this.Laskut = henkilöt.Laskut;
+                        foreach(Lasku lasku in this.Laskut) {
+                            lasku.Maksumuistutus1.AsetaIsäntälasku(lasku);
+                            lasku.Maksumuistutus2.AsetaIsäntälasku(lasku);
+                        }
                     }
                 }
                 Console.WriteLine("Tietokannan luku onnistui");

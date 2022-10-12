@@ -1,0 +1,55 @@
+1. Johdanto
+1.1 Tarkoitus ja kattavuus
+
+
+Tarkoitus luoda laskutussovellus, joka pitää muistissa laskujen saajan ja summan.
+Sovellus jota voi käyttää laskutietojen tallentamiseen. Sovelluksessa voi tallentaa laskut ja sovellus laskee eräpäivän ja laskee eräpäivän yli menneesstä ajasta automaattisesti lisät. Maksumuistutukset ja laskujen kuittaukset tehdään manuaalisesti.
+
+1.2 Tuote ja ympäristö
+
+Wpf sovellus toimii windows alustalla
+
+1.3 Määritelmät, termit ja lyhenteet
+
+Wpf eli Windows Presentation Foundation on UI framework jolla voi luoda työpöytä client sovelluksia.
+
+1.4 Viitteet
+
+https://book.sovelluskontti.com/toimeksiannot-2020-01/laskun-perintae
+
+1.5 Yleiskatsaus dokumenttiin
+
+kansiosta löytyy työajat, hahmotelmat ja suunnitelmat ja sovellus
+
+2. Yleiskuvaus
+2.1 Ympäristö
+
+Laskutussovellus, joka toimii Wpf ympäristössä
+
+2.2 Toiminta
+
+Käyttäjä voi manuaalisesti luoda uusia laskuja ja päästä vanhoihin laskutietoihin käsiksi
+Pääikkunassa näkyy vaihtoehto luoda uusi lasku tai päästä vanhoihin laskuihin. Valintaa klikatessa aukeeaa uusi ikkuna, jossa mahdollista luoda uusi lasku tai muokata vanhoja laskuja. Uusi lasku ikkunassa voi tallentaa laskulle nimen, osoitteen, summan ja tallennuspäivän. Vanhat laskut ikkunassa näkyy maksetut ja maksamattomat laskut menut. Menu itemeinä toimii laskunsaajan nimi; menuitemiä klikatessa kyseisen laskun tiedot näkyy. Ikkunoiden välillä navigointi toimii ikkunan vasemmasta yläkulmasta löytyvän dockpanel menun kautta 
+
+2.3 Käyttäjät
+
+Käyttäjänä toimii henkilö, joka vastaa laskuista
+
+2.4 Yleiset rajoitteet
+
+Sovelluksessa yksinkertainen UI
+
+2.5 Oletukset ja riippuvuudet
+
+Toimii windows käyttöjärjestelmässä, muilla käyttöjärjestelmillä toimivuutta ei ole testattu.
+
+3. Tiedot ja tietokanta
+3.1 Tietosisältö
+
+Laskut tallennetan JSON tiedostoon ja luetaan sieltä sovelluksen sisään.
+
+3.2 Kapasiteettivaatimukset
+
+windows tietokone, joka voi pyörittää visual studio 2022. Eli vähintään 
+Windows 365: Minimum 2 vCPU and 8 GB RAM. 4 vCPU and 16 GB of RAM recommended. Hard disk space: Minimum of 850 MB up to 210 GB of available space, depending on features installed; typical installations require 20-50 GB of free space.
+

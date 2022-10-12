@@ -26,7 +26,8 @@ namespace projektityö
         private Window2 _window2;
         private Window1 uusiIkkuna;
         private Tallentaminen tallentaminen;
-        
+        private Lasku valittulasku = new Lasku();
+
         public Window2()
         {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace projektityö
             if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
             {
                 //Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
-                Lasku valittulasku = (Lasku)listBox.SelectedItem;
+                valittulasku = (Lasku)listBox.SelectedItem;
                 Vastaanottaja valittuVastaanottaja = valittulasku.Vastaanottaja;
 
                 nameBox.Text = valittuVastaanottaja.Etunimi + " " + valittuVastaanottaja.Sukunimi;
@@ -92,8 +93,7 @@ namespace projektityö
                 
 
             }
-
-
+            listBox2.SelectedIndex = -1;
             //listBox.ItemsSource = Tallentaminen.Laskut;
         }
 
@@ -108,24 +108,19 @@ namespace projektityö
 
         private void poistaBtn_Click(object sender, RoutedEventArgs e)
         {
-            Lasku valittulasku = (Lasku)listBox.SelectedItem;
             tallentaminen.PoistaLasku(valittulasku);
-
-            MessageBox.Show("lasku poistettu, käy kotisivulla ja palaa tähän niin muutos näkyy");
-            
-            
-
+            MessageBox.Show("lasku poistettu");
+            Refresh();
         }
 
         private void maksettuBtn_Click(object sender, RoutedEventArgs e)
         {
-            Lasku valittulasku = (Lasku)listBox.SelectedItem;
             DateTime nyt = DateTime.Now;
             valittulasku.AsetaMaksupäivä(nyt);
             tallentaminen.PoistaLasku(valittulasku);
             tallentaminen.LisääLasku(valittulasku);
-            MessageBox.Show("lasku tallennettu, käy kotisivulla ja palaa tähän niin muutos näkyy");
-            
+            MessageBox.Show("lasku tallennettu");
+            Refresh();
         }
 
         private void listBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -133,7 +128,7 @@ namespace projektityö
             if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
             {
                 //Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
-                Lasku valittulasku = (Lasku)listBox2.SelectedItem;
+                valittulasku = (Lasku)listBox2.SelectedItem;
                 Vastaanottaja valittuVastaanottaja = valittulasku.Vastaanottaja;
 
                 nameBox.Text = valittuVastaanottaja.Etunimi + " " + valittuVastaanottaja.Sukunimi;
@@ -145,8 +140,13 @@ namespace projektityö
 
 
             }
-            listBox2.SelectedIndex = -1;
             listBox.SelectedIndex = -1;
+        }
+        private void Refresh()
+        {
+            Window2 window = new Window2();
+            _window2.Close();
+            window.Show();
         }
     }
     

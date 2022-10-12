@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:projektityö"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Uusi lasku" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click" FontSize="16"/>
-        <Button Content="Vanhat laskut" HorizontalAlignment="Left" Margin="537,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click_1" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Center" Height="52" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" FontSize="36"><Run Language="fi-fi" Text="Laskutus-sovellus"/></TextBlock>
+        <Button Content="Uusi lasku" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click" FontSize="16" FontFamily="Arial" BorderBrush="#FF2D3E40" Background="#FF93BFB7"/>
+        <Button Content="Vanhat laskut" HorizontalAlignment="Left" Margin="537,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click_1" FontSize="16" FontFamily="Arial" BorderBrush="#FF2D3E40" Background="#FF93BFB7"/>
+        <TextBlock HorizontalAlignment="Center"  Height="52" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" FontSize="36" FontFamily="Arial" Foreground="Black"><Run Language="fi-fi" Text="Laskutus-sovellus"/></TextBlock>
 
     </Grid>
 </Window>

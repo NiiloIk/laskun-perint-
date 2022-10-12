@@ -9,12 +9,9 @@
         Title="Window2" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_Menu" >
-                <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
-                <MenuItem Header="_Uusi Lasku" Click="MenuItem_Click_2" />
-                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
-
-            </MenuItem>
+            <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
+            <MenuItem Header="_Uusi Lasku" Click="MenuItem_Click_2" />
+            <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
 
         </Menu>
         <Grid>
@@ -25,22 +22,22 @@
                 <ColumnDefinition Width="8*"/>
                 <ColumnDefinition Width="375*"/>
             </Grid.ColumnDefinitions>
-            <ListBox x:Name="listBox" Grid.ColumnSpan="5" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,32,633,0" SelectionChanged="listBox_SelectionChanged" DisplayMemberPath="Vastaanottaja.Etunimi" />
-            <TextBlock HorizontalAlignment="Left" Margin="283,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="32" Text="Nimi"/>
-            <TextBlock HorizontalAlignment="Left" Margin="284,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43"><Run Language="fi-fi" Text="Lasku"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="283,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43" Text="Osoite"/>
-            <TextBlock HorizontalAlignment="Left" Margin="284,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43"><Run Language="fi-fi" Text="Lisät"/></TextBlock>
-            <Button x:Name="poistaBtn" Content="Poista" HorizontalAlignment="Left" Margin="164,45,0,0" VerticalAlignment="Top" Click="poistaBtn_Click" Height="33" Width="68" Grid.Column="4"/>
-            <ListBox x:Name="listBox2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="583,32,0,0" DisplayMemberPath="Vastaanottaja.Etunimi" Grid.Column="4" SelectionChanged="listBox2_SelectionChanged" />
+            <ListBox x:Name="listBox" Grid.ColumnSpan="5" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,32,622,0" SelectionChanged="listBox_SelectionChanged" DisplayMemberPath="Vastaanottaja.Etunimi" BorderBrush="#FF2D3E40" />
+            <TextBlock HorizontalAlignment="Left" Margin="283,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="32" Text="Nimi" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="284,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43" FontSize="14"><Run Language="fi-fi" Text="Lasku"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="283,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43" Text="Osoite" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="284,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="43" FontSize="14"><Run Language="fi-fi" Text="Lisät"/></TextBlock>
+            <Button x:Name="poistaBtn" Content="Poista" HorizontalAlignment="Left" Margin="164,37,0,0" VerticalAlignment="Top" Click="poistaBtn_Click" Height="35" Width="85" Grid.Column="4" BorderBrush="#FF2D3E40" Background="#FF93BFB7" FontSize="14"/>
+            <ListBox x:Name="listBox2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="568,32,0,0" DisplayMemberPath="Vastaanottaja.Etunimi" Grid.Column="4" SelectionChanged="listBox2_SelectionChanged" BorderBrush="#FF2D3E40" Background="{x:Null}" />
             <Label Content="Maksamattomat laskut" Grid.ColumnSpan="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" FontSize="16"/>
-            <Label Content="Maksetut laskut" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="583,0,0,0" Grid.Column="4" Width="167" FontSize="16"/>
-            <Button x:Name="maksettuBtn" Content="Kuittaa lasku" HorizontalAlignment="Left" Margin="472,38,0,0" VerticalAlignment="Top" Height="40" Width="81" Click="maksettuBtn_Click" Grid.Column="4" />
-            <TextBlock x:Name="adressBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FFE0E0E0"/>
-            <TextBlock x:Name="nameBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FFE0E0E0"/>
-            <TextBlock x:Name="amountBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FFE0E0E0"/>
-            <TextBlock x:Name="lisäBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FFE0E0E0"/>
-            <TextBlock x:Name="pmBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FFE0E0E0"/>
-            <TextBlock HorizontalAlignment="Left" Margin="284,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="128"><Run Language="fi-fi" Text="Eräpäivääärä"/></TextBlock>
+            <Label Content="Maksetut laskut" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="583,1,0,0" Grid.Column="4" Width="167" FontSize="16"/>
+            <Button x:Name="maksettuBtn" Content="Kuittaa lasku" HorizontalAlignment="Left" Margin="472,38,0,0" VerticalAlignment="Top" Height="35" Width="85" Click="maksettuBtn_Click" Grid.Column="4" BorderBrush="#FF2D3E40" Background="#FF93BFB7" FontSize="14" />
+            <TextBlock x:Name="adressBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FF93BFB7"/>
+            <TextBlock x:Name="nameBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FF93BFB7"/>
+            <TextBlock x:Name="amountBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FF93BFB7"/>
+            <TextBlock x:Name="lisäBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FF93BFB7"/>
+            <TextBlock x:Name="pmBox" Grid.Column="4" HorizontalAlignment="Left" Height="32" Margin="284,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Text="" Background="#FF93BFB7"/>
+            <TextBlock HorizontalAlignment="Left" Margin="284,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="128" FontSize="14"><Run Text="Eräpäivä"/><Run Language="fi-fi" Text="m"/><Run Text="äärä"/></TextBlock>
         </Grid>
     </DockPanel>
 </Window>

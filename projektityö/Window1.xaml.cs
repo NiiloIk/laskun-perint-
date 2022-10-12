@@ -108,5 +108,10 @@ namespace projektityö
             etuBox.Clear();
 
         }
+
+        private void etuBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,29 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-/*
- * class Lasku
- -summa:float
- -maksettava:float => summa + ..maksulisät.summa
- -maksulisät:List<MaksuLisä>
- -eräpäivä:DateOnly 
- -maksupäivä:DateOnly 
- -suoritettu:bool -> maksuPäivä != null
- -maksumuistutus1:Maksumuistutus
- -maksumuistutus2:Maksumuistutus
- -vastaanottaja:Vastaanottaja
 
- +asetaMaksetuksi() : void {
-  maksupäivä = pvmTänään;
- }
-
- +onkoSuoritettu() : true {
-   return suoritettu;
- }
-*/
 namespace projektityö.Luokat
 {
     public class Lasku
@@ -39,7 +17,6 @@ namespace projektityö.Luokat
         public Maksumuistutus Maksumuistutus2 { get; set; }
         public Vastaanottaja Vastaanottaja { get; set; }
 
-        //public List<Maksulisä> Maksulisät = new();
         public List<Maksulisä> Maksulisät { get; set; } = new();
 
         public Lasku(float summa, DateTime erapaiva, DateTime? maksupäivä, Maksumuistutus maksumuistutus1, Maksumuistutus maksumuistutus2, Vastaanottaja vastaanottaja, List<Maksulisä> maksulisät)
@@ -57,7 +34,6 @@ namespace projektityö.Luokat
         {
             this.Maksumuistutus1 = new Maksumuistutus(this);
             this.Maksumuistutus2 = new Maksumuistutus(this);
-            //this.Vastaanottaja = new Vastaanottaja();
         }
         public void lisääMaksulisä(Maksulisä maksulisä)
         {
@@ -93,7 +69,6 @@ namespace projektityö.Luokat
         {
             if (maksupäivä == null)
             {
-                //maksupäivä = DateTime.FromDateTime(DateTime.Now);
                 maksupäivä = DateTime.Now;
             }
             this.Maksupäivä = maksupäivä;

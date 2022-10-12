@@ -43,6 +43,8 @@ namespace projektityö
             this.tallentaminen = new Tallentaminen();
             tallentaminen.Init();
 
+
+            // Tarkistetaan onko lasku maksettu vai ei ja siirretään ne omiin laatikoihinsa.
             List<Lasku> lasku = new List<Lasku>();
             List<Lasku> lasku2 = new List<Lasku>();
 
@@ -60,13 +62,6 @@ namespace projektityö
                 listBox.ItemsSource = lasku2;
             }
             
-            // Tässä kohtaa tee foreach, joka käy haetun listan läpi, ja lisää nimet yksi kerrallaan listBoxiin
-            //foreach(var jäbä in vastaanottajat){
-            //  listBox.Items.Add(jäbä);
-            //}
-
-
-
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -76,11 +71,11 @@ namespace projektityö
             this.Close();
         }
 
+        // maksamattoman laskun valitseminen
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
             {
-                //Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
                 valittulasku = (Lasku)listBox.SelectedItem;
                 Vastaanottaja valittuVastaanottaja = valittulasku.Vastaanottaja;
 
@@ -94,7 +89,6 @@ namespace projektityö
 
             }
             listBox2.SelectedIndex = -1;
-            //listBox.ItemsSource = Tallentaminen.Laskut;
         }
 
         
@@ -108,6 +102,7 @@ namespace projektityö
 
         private void poistaBtn_Click(object sender, RoutedEventArgs e)
         {
+            // poistaa valitun laskun muistista
             tallentaminen.PoistaLasku(valittulasku);
             MessageBox.Show("lasku poistettu");
             Refresh();
@@ -115,19 +110,23 @@ namespace projektityö
 
         private void maksettuBtn_Click(object sender, RoutedEventArgs e)
         {
-            DateTime nyt = DateTime.Now;
-            valittulasku.AsetaMaksupäivä(nyt);
-            tallentaminen.PoistaLasku(valittulasku);
-            tallentaminen.LisääLasku(valittulasku);
-            MessageBox.Show("lasku tallennettu");
-            Refresh();
+            // asettaa valitun laskun maksetuksi
+            if (!valittulasku.OnkoMaksettu())
+            {
+                DateTime nyt = DateTime.Now;
+                valittulasku.AsetaMaksupäivä(nyt);
+                tallentaminen.PoistaLasku(valittulasku);
+                tallentaminen.LisääLasku(valittulasku);
+                MessageBox.Show("lasku tallennettu");
+                Refresh();
+            }
         }
 
+        // maksetun laskun valitseminen
         private void listBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.AddedItems.Count > 0 && e.AddedItems[0] != null)
             {
-                //Vastaanottaja vastaanottaja = (Vastaanottaja)e.AddedItems[0];
                 valittulasku = (Lasku)listBox2.SelectedItem;
                 Vastaanottaja valittuVastaanottaja = valittulasku.Vastaanottaja;
 
@@ -137,13 +136,12 @@ namespace projektityö
                 amountBox.Text = valittulasku.summa.ToString();
                 lisäBox.Text = valittulasku.MaksulisienSumma().ToString();
                 pmBox.Text = valittulasku.Eräpäivä.ToString("dd/MM/yyyy");
-
-
             }
             listBox.SelectedIndex = -1;
         }
         private void Refresh()
         {
+            // päivittää tallennetut tiedot.
             Window2 window = new Window2();
             _window2.Close();
             window.Show();

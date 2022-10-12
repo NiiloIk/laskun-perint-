@@ -17,18 +17,23 @@
             </MenuItem>
         </Menu>
         <Grid>
-            <Label Content="Etunimi" HorizontalAlignment="Left" Margin="34,59,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="etuBox" HorizontalAlignment="Left" Margin="34,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBlock HorizontalAlignment="Left" Margin="34,38,0,0" TextWrapping="Wrap" Text="Luo uusi lasku" VerticalAlignment="Top"/>
-            <Label Content="Kotiosoite" HorizontalAlignment="Left" Margin="34,168,0,0" VerticalAlignment="Top" Height="26"/>
-            <TextBox x:Name="osoiteBox" HorizontalAlignment="Left" Margin="34,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
-            <Label Content="Summa" HorizontalAlignment="Left" Margin="34,226,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="summaBox" HorizontalAlignment="Left" Margin="34,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="tallenna" Content="Tallenna" HorizontalAlignment="Left" Margin="208,268,0,0" VerticalAlignment="Top" Height="25" Width="84" Click="tallenna_Click"/>
-            <Label Content="Sukunimi" HorizontalAlignment="Left" Margin="34,108,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="sukuBox" HorizontalAlignment="Left" Margin="34,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <DatePicker x:Name="päivämäärä" HorizontalAlignment="Left" Margin="43,294,0,0" VerticalAlignment="Top"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="208,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="783*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Etunimi" HorizontalAlignment="Left" Margin="17,59,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <TextBox x:Name="etuBox" HorizontalAlignment="Left" Margin="17,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <TextBlock HorizontalAlignment="Left" Margin="17,18,0,0" TextWrapping="Wrap" Text="Luo uusi lasku" VerticalAlignment="Top" Height="36" Width="120" FontSize="18" Grid.Column="1"/>
+            <Label Content="Kotiosoite" HorizontalAlignment="Left" Margin="17,168,0,0" VerticalAlignment="Top" Height="26" Grid.Column="1"/>
+            <TextBox x:Name="osoiteBox" HorizontalAlignment="Left" Margin="17,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Grid.Column="1"/>
+            <Label Content="Summa" HorizontalAlignment="Left" Margin="17,226,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <TextBox x:Name="summaBox" HorizontalAlignment="Left" Margin="17,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <Button x:Name="tallenna" Content="Tallenna" HorizontalAlignment="Left" Margin="191,268,0,0" VerticalAlignment="Top" Height="25" Width="84" Click="tallenna_Click" Grid.Column="1"/>
+            <Label Content="Sukunimi" HorizontalAlignment="Left" Margin="17,108,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <TextBox x:Name="sukuBox" HorizontalAlignment="Left" Margin="17,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <DatePicker x:Name="päivämäärä" HorizontalAlignment="Left" Margin="17,294,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="191,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Päivämäärä&#xD;&#xA;" HorizontalAlignment="Left" Margin="17,268,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1"/>
         </Grid>
     </DockPanel>
 </Window>

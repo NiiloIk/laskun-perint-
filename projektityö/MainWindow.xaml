@@ -11,9 +11,9 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Eeppinen laskusovellus" VerticalAlignment="Top" Width="190" Height="43" RenderTransformOrigin="0.484,0.503" TextChanged="TextBox_TextChanged" FontSize="14"/>
-        <Button Content="Uusi lasku" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click"/>
-        <Button Content="Vanhat laskut" HorizontalAlignment="Left" Margin="537,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click_1"/>
+        <Button Content="Uusi lasku" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click" FontSize="16"/>
+        <Button Content="Vanhat laskut" HorizontalAlignment="Left" Margin="537,0,0,0" VerticalAlignment="Center" Height="49" Width="110" Click="Button_Click_1" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Center" Height="52" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" FontSize="36"><Run Language="fi-fi" Text="Laskutus-sovellus"/></TextBlock>
 
     </Grid>
 </Window>

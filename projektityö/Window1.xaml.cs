@@ -48,8 +48,6 @@ namespace projektityö
         public void LisääLasku(Lasku uusiLasku)
         {
             this.tallentaminen.LisääLasku(uusiLasku);
-
-          
         }
         
 
@@ -75,6 +73,10 @@ namespace projektityö
                 MessageBox.Show("Osoite kenttä on tyhjä");
                 return;
             }
+            if(päivämäärä.SelectedDate == null)
+            {
+                MessageBox.Show("Päivämäärä on tyhjä");
+            }
 
             Vastaanottaja vastaanottaja = new Vastaanottaja();
             vastaanottaja.Osoite = osoite;
@@ -83,6 +85,7 @@ namespace projektityö
             Lasku uusi = new Lasku();
             uusi.Vastaanottaja = vastaanottaja;
 
+            // tarkistaa että summa ja päivämäärä on asetettu
             try
             {
                 uusi.summa = float.Parse(summa);
@@ -91,7 +94,14 @@ namespace projektityö
                 MessageBox.Show("Virheellinen summa");
                 return;
             }
-                uusi.Luontipäivämäärä = (DateTime) päivämäärä.SelectedDate;
+            try
+            {
+                uusi.Luontipäivämäärä = (DateTime)päivämäärä.SelectedDate;
+            }
+            catch
+            {
+                return;
+            }
             uusi.Eräpäivä = uusi.Luontipäivämäärä.AddDays(14);
             this.LisääLasku(uusi);
             textBlock.Text = "*Tiedot tallennettu";

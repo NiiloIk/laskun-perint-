@@ -34,13 +34,13 @@ namespace projektityö.Luokat
 
             DateTime pvmTänään = DateTime.Now;
 
-            if (olenkoMaksumuistutus1 && pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(14))
+            if (olenkoMaksumuistutus1 && pvmTänään > this.Isäntälasku.Eräpäivä)
             {
                 return true;
             }
             else
             {
-                return pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(28);
+                return pvmTänään > this.Isäntälasku.Eräpäivä.AddDays(14);
             }
         }
 

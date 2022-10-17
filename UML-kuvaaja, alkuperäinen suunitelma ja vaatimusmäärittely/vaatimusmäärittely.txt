@@ -1,7 +1,6 @@
 1. Johdanto
 1.1 Tarkoitus ja kattavuus
 
-
 Tarkoitus luoda laskutussovellus, joka pitää muistissa laskujen saajan ja summan.
 Sovellus jota voi käyttää laskutietojen tallentamiseen. Sovelluksessa voi tallentaa laskut ja sovellus laskee eräpäivän ja laskee eräpäivän yli menneesstä ajasta automaattisesti lisät. Maksumuistutukset ja laskujen kuittaukset tehdään manuaalisesti.
 
@@ -53,3 +52,44 @@ Laskut tallennetan JSON tiedostoon ja luetaan sieltä sovelluksen sisään.
 windows tietokone, joka voi pyörittää visual studio 2022. Eli vähintään 
 Windows 365: Minimum 2 vCPU and 8 GB RAM. 4 vCPU and 16 GB of RAM recommended. Hard disk space: Minimum of 850 MB up to 210 GB of available space, depending on features installed; typical installations require 20-50 GB of free space.
 
+
+4. Toiminnot
+4.1 Uusi lasku
+
+Luodessa uuden laskun, ohjelmisto tallentaa automaattisesti laskutiedot talteen. Ohjelmisto asettaa automaattisesti laskulle eräpäivän.
+
+4.2 Vanhat laskut
+
+Ladatessa vanhat laskut sivun, ohjelmisto hakee tallennetut laskutiedot omasta kansiostaan ja laittavat ne näytölle näkyviin. Maksetut laskut ja maksamattomat laskut asettuvat omiin listoihinsa. Jos maksamattoman laskun eräpäivä on jo mennyt, niin ohjelma antaa käyttäjälle makdollisuuden lähettää maksumuistutuksen, josta tulee lisämaksu.
+Maksamattoman laskun voi asettaa ohjelmasta maksetuksi, jolloin maksamaton lasku siirtyy maksettujen laskujen listalle.
+
+
+5. Ulkoiset liittymät
+
+6. Muut ominaisuudet
+
+6.1 Saavutettavuus (availability), toipuminen, turvallisuus, suojaukset
+
+Ohjelmistolla voi luoda uuden laskun pelkällä näppäimistöllä, mutta vanhoja laskuja ei pysty tarkastamaan. 
+
+Järjestelmään tallennetut laskut eivät ole olemassa missään muualla, kuin sillä tietokoneella millä ohjelmaa käytetään, joten se on osittain turvallinen. Ohjelmisto on juuri niin haavoittuvainen kuin käyttäjän tietokone on.
+
+6.2 Ylläpidettävyys
+
+Koodia voi olla hieman sekavaa lukea, mutta sitä pystyisi kehittää ja parantaa ilman suurempia ongelmia.
+
+6.3 Siirrettävyys ja yhteensopivuus
+
+Ohjelmisto ei tarkista yhteensopivuutta missään vaiheessa.
+
+7. Suunnittelurajoitteet
+
+Ohjelmisto ei lähetä laskuja oikeasti mihinkään, joten laskutiedot pitäisi kopioida ja lähettää eteenpäin. 
+
+8. Hylätyt ratkaisuvaihtoehdot
+
+9. Jatkokehitysajatuksia
+
+Ohjelmisto voisi lähettää varmistuksen jälkeen laskut oikeaan osoitteeseen. Sen jälkeen maksumuistutukset voitaisiin lähettää automaattisesti, jos laskut ovat vielä maksamattomia.
+Ohjelmisto voisi myös saada vahvistuksen laskujen maksusta ja merkata laskut maksetuksi ilman, että niitä tarvitsisi manuaalisesti asettaa maksetuksi.
+Koodia voisi parantaa selkeämmäksi ja kevyemmäksi.

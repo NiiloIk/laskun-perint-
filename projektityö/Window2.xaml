@@ -11,7 +11,7 @@
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Kotisivu" Click="MenuItem_Click"/>
             <MenuItem Header="_Uusi Lasku" Click="MenuItem_Click_2" />
-            <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
+            <MenuItem Header="E_xit" Click="Exit_Click"/>
 
         </Menu>
         <Grid>

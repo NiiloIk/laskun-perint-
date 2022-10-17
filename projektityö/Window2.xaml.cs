@@ -34,14 +34,6 @@ namespace projektityö
             this._window2 = this;
             maksumuistuta_Btn.Visibility = Visibility.Hidden;
 
-
-            //Haetaan tiedot tallennuskansiosta, eli tässä kohtaa hae lista Vastaanottajista
-            //Vastaanottaja vastaanottaja = new Vastaanottaja("Matti", "Meikäläinen", "Matintie 1A, 00100 MATTILA");
-            //Vastaanottaja vastaanottaja2 = new Vastaanottaja("Vatti", "Eeikäläinen", "Säkintie 1A, 13400 SÄKKILÄ");
-            //listBox.DataContext = vastaanottaja;
-            //listBox.DisplayMemberPath = "kokoNimi";
-            //listBox.Items.Add(vastaanottaja);
-            //listBox.Items.Add(vastaanottaja2);
             this.tallentaminen = new Tallentaminen();
             tallentaminen.Init();
 
@@ -182,6 +174,11 @@ namespace projektityö
             }
             tallentaminen.TallennaKanta();
             Refresh();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
     
